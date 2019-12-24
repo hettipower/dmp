@@ -1,23 +1,23 @@
 import { createSelector } from 'reselect';
 
-const selectCommonAPI = state => state.commonParams;
+const selectCommonAPI = state => state.common;
 
 export const selectSiteLogo = createSelector(
     [selectCommonAPI],
-    (commonParams) => commonParams.logo
+    (common) => common.logo
 );
 
 export const selectFooterLogo = createSelector(
     [selectCommonAPI],
-    (commonParams) => commonParams.footerLogo
+    (common) => common.footerLogo
 );
 
 export const selectSocialMedia = createSelector(
     [selectCommonAPI],
-    (commonParams) => commonParams.socialMedia
+    (common) => common.socialMedia
 );
 
 export const selectCopyrights = createSelector(
     [selectCommonAPI],
-    (commonParams) => commonParams.copyrights
+    (common) => common.copyrights
 );

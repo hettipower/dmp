@@ -1,0 +1,28 @@
+.headerWrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .navbar {
+        padding: 1rem 0 0;
+        flex-wrap: nowrap;
+
+        #navbar {
+            display: flex;
+            justify-content: flex-end;
+
+            .navbar-nav {
+                flex-direction: unset;
+
+                .nav-link {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    padding: 5px 16px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

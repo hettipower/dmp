@@ -1,0 +1,20 @@
+.mainBannerWrap{
+    .mainBanner {
+        min-height: 668px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bannerText {
+        background-color: #fff;
+
+        h1 {
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0;
+            width: 100%;
+            padding: 0 5rem;
+            font-size: 6rem;
+        }
+    }
+}

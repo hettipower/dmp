@@ -5,7 +5,7 @@ import { createStructuredSelector } from 'reselect';
 
 import { selectSiteLogo } from '../../redux/common/common.selectors';
 
-import './header.styles';
+import './header.styles.scss';
 
 const Header = ({ logo }) => (
     <div className="headerWrap">

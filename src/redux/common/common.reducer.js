@@ -14,7 +14,7 @@ const commonReducer = ( state = INITIAL_STATE , action ) => {
                 ...state,
                 logo : action.payload
             }
-        case commonActionTypes.SET_COPYRIGHTS:
+        case commonActionTypes.SET_COPYRIGHT:
             return{
                 ...state,
                 copyrights : action.payload

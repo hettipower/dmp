@@ -6,7 +6,7 @@ export const setSiteLogo = logo => ({
 });
 
 export const setCopyrights = copyrights => ({
-    type : commonActionTypes.SET_COPYRIGHTS,
+    type : commonActionTypes.SET_COPYRIGHT,
     payload : copyrights
 });
 

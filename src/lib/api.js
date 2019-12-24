@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: `https://mayaprojects.net/salesmove/wp/wp-json/salesmove/v1/`//Rest API URL
+  baseURL: `https://demo.easydentalmarketing.com/DMP/wp/wp-json/dmp/v1/`//Rest API URL
 });

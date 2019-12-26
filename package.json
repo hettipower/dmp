@@ -1,5 +1,6 @@
 {
   "name": "dmp",
+  "homepage": "https://demo.easydentalmarketing.com/DMP",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

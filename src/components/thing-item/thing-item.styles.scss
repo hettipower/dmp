@@ -1,0 +1,106 @@
+.thingItemWrap{
+    padding: 1.5rem;
+    color: #ffffff;
+    width: 30%;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    &:hover {
+        .imgOverlay{
+            opacity: 0.5;
+        }
+
+        .linksWrap {
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+
+            .contentWrap {
+                opacity: 1;
+            }
+        }
+
+        .contentWrap {
+            opacity: 0;
+        }
+    }
+
+    .imgOverlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 0.5s all ease;
+        -webkit-transition: 0.5s all ease;
+        -moz-transition: 0.5s all ease;
+        -ms-transition: 0.5s all ease;
+        -o-transition: 0.5s all ease;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contentWrap {
+        margin-top: auto;
+        position: relative;
+        z-index: 10;
+
+        h3 {
+            font-weight: 800;
+            font-size: 3rem;
+        }
+
+        .description {
+            font-size: 14px;
+            margin-bottom: 1rem;
+        }
+
+        
+    }
+
+    .linksWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem;
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transition: 0.5s all ease;
+        -webkit-transition: 0.5s all ease;
+        -moz-transition: 0.5s all ease;
+        -ms-transition: 0.5s all ease;
+        -o-transition: 0.5s all ease;
+
+        h3 {
+            font-weight: 800;
+            font-size: 3rem;
+        }
+
+        .description {
+            font-size: 14px;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none !important;
+            font-weight: 700;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+    }
+}

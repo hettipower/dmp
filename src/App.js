@@ -57,8 +57,8 @@ class App extends React.Component {
       setAboutContent(response.data.aboutContent);
       setAboutImage(response.data.aboutImage);
       setThings(response.data.things);
-      setClients(response.data.testimonials);
-      setTestimonials(response.data.clients);
+      setClients(response.data.clients);
+      setTestimonials(response.data.testimonials);
     });
 
   }
@@ -86,8 +86,8 @@ const mapDispatchToProps = dispatch => ({
   setAboutContent : (aboutContent) => dispatch(setAboutContent(aboutContent)),
   setAboutImage : (aboutImage) => dispatch(setAboutImage(aboutImage)),
   setThings : (things) => dispatch(setThings(things)),
-  setClients : (testimonials) => dispatch(setClients(testimonials)),
-  setTestimonials : (clients) => dispatch(setTestimonials(clients)),
+  setClients : (clients) => dispatch(setClients(clients)),
+  setTestimonials : (testimonials) => dispatch(setTestimonials(testimonials)),
 });
 
 export default connect(null,mapDispatchToProps)(App);

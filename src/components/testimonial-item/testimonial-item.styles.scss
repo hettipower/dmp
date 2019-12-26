@@ -1,0 +1,36 @@
+.testimonialItem{
+    .quote {
+        color: #787878;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+    }
+
+    .authorWrap {
+        .image {
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
+            border-radius: 100%;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .detail {
+            h4 {
+                color:  #363636;
+                margin-bottom: 0;
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            .company {
+                color: #636363;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+    }
+}

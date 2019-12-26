@@ -1,0 +1,25 @@
+.aboutWrap {
+    background-color: #0187ce;
+    padding: 4rem 3rem 0;
+
+    .aboutContent {
+        width: 57%;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        color: #fff;
+        font-size: 13px;
+
+        h2 {
+            margin-bottom: 2rem;
+            font-weight: 800;
+        }
+    }
+
+    .aboutImageWrap {
+        margin-bottom: -2rem;
+
+        .aboutArrow {
+            margin-left: 4rem;
+        }
+    }
+}

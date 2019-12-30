@@ -18,6 +18,7 @@ import API from './lib/api';
 import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
 import HomePage from './pages/home/home.component';
+import ServicesPage from './pages/services/services.component';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -69,6 +70,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/services" component={ServicesPage} />
         </Switch>
         <Footer/>
       </div>

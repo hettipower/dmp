@@ -4,6 +4,7 @@ import storage from 'redux-persist/lib/storage';
 
 import commonReducer from './common/common.reducer';
 import homeReducer from './home/home.reducer';
+import portfolioReducer from './portfolios/portfolios.reducer';
 
 const persistConfig = {
     key: 'root',
@@ -13,7 +14,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     common : commonReducer,
-    home : homeReducer
+    home : homeReducer,
+    portfolios : portfolioReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);

@@ -12,6 +12,7 @@ import {
   setClients , 
   setTestimonials 
 } from './redux/home/home.actions';
+import { setPortfolios } from './redux/portfolios/portfolios.actions';
 
 import API from './lib/api';
 
@@ -21,6 +22,7 @@ import HomePage from './pages/home/home.component';
 import ServicesPage from './pages/services/services.component';
 import AboutPage from './pages/about/about.component';
 import WorkPage from './pages/work/work.component';
+import ContactDetails from './components/contact-details/contact-details.component';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -40,7 +42,8 @@ class App extends React.Component {
       setAboutImage , 
       setThings , 
       setClients , 
-      setTestimonials 
+      setTestimonials , 
+      setPortfolios
     } = this.props;
 
     //Get Common Params
@@ -64,6 +67,12 @@ class App extends React.Component {
       setTestimonials(response.data.testimonials);
     });
 
+    //Get Portfolios
+    API.get('portfolios')
+    .then(function(response){
+      setPortfolios(response.data);
+    });
+
   }
 
   render(){
@@ -76,6 +85,7 @@ class App extends React.Component {
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/work" component={WorkPage} />
         </Switch>
+        <ContactDetails/>
         <Footer/>
       </div>
     )
@@ -94,6 +104,7 @@ const mapDispatchToProps = dispatch => ({
   setThings : (things) => dispatch(setThings(things)),
   setClients : (clients) => dispatch(setClients(clients)),
   setTestimonials : (testimonials) => dispatch(setTestimonials(testimonials)),
+  setPortfolios : (portfolios) => dispatch(setPortfolios(portfolios)),
 });
 
 export default connect(null,mapDispatchToProps)(App);

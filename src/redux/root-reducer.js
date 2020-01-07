@@ -5,17 +5,19 @@ import storage from 'redux-persist/lib/storage';
 import commonReducer from './common/common.reducer';
 import homeReducer from './home/home.reducer';
 import portfolioReducer from './portfolios/portfolios.reducer';
+import blogReducer from './blog/blog.reducer';
 
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist : ['']
+    whitelist : ['blogReducer']
 }
 
 const rootReducer = combineReducers({
     common : commonReducer,
     home : homeReducer,
-    portfolios : portfolioReducer
+    portfolios : portfolioReducer,
+    blog : blogReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);

@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './blog-item.styles.scss';
 
-const BlogItem = () => (
+const BlogItem = ({ title , date , featuredImage , slug }) => (
     <div className="blogItem">
-        <div className="date"></div>
-        <h3></h3>
-        <div className="imgWrap"></div>
+        <Link to={`/blog/${slug}`} />
+        <div className="date">{date}</div>
+        <h3>{title}</h3>
+        <div className="imgWrap" style={{ backgroundImage : `url(${featuredImage})` }} />
     </div>
 );
 

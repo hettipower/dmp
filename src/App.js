@@ -13,6 +13,7 @@ import {
   setTestimonials 
 } from './redux/home/home.actions';
 import { setPortfolios } from './redux/portfolios/portfolios.actions';
+import { setBlogPosts } from './redux/blog/blog.actions';
 
 import API from './lib/api';
 
@@ -43,7 +44,8 @@ class App extends React.Component {
       setThings , 
       setClients , 
       setTestimonials , 
-      setPortfolios
+      setPortfolios , 
+      setBlogPosts
     } = this.props;
 
     //Get Common Params
@@ -71,6 +73,12 @@ class App extends React.Component {
     API.get('portfolios')
     .then(function(response){
       setPortfolios(response.data);
+    });
+
+    //Get Blog Posts
+    API.get('blog')
+    .then(function(response){
+      setBlogPosts(response.data);
     });
 
   }
@@ -105,6 +113,7 @@ const mapDispatchToProps = dispatch => ({
   setClients : (clients) => dispatch(setClients(clients)),
   setTestimonials : (testimonials) => dispatch(setTestimonials(testimonials)),
   setPortfolios : (portfolios) => dispatch(setPortfolios(portfolios)),
+  setBlogPosts : (blogPosts) => dispatch(setBlogPosts(blogPosts)),
 });
 
 export default connect(null,mapDispatchToProps)(App);

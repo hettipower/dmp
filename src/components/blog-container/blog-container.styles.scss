@@ -1,0 +1,21 @@
+.blogContainerWrap {
+    padding: 2rem 5rem;
+
+    h6 {
+        color: #666;
+        font-weight: 600;
+    }
+
+    h2 {
+        color: #666;
+        font-weight: 900;
+        font-size: 2.4rem;
+    }
+
+    .blogWrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

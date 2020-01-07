@@ -1,0 +1,21 @@
+.blogItem {
+    width: 32%;
+
+    .date {
+        color: #0188cc;
+        font-weight: 600;
+    }
+
+    h3 {
+        color: #656565;
+        font-weight: 600;
+    }
+
+    .imgWrap {
+        background-color: #eee;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        min-height: 350px;
+    }
+}

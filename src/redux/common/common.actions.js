@@ -19,3 +19,13 @@ export const setSocialMedia = socialMedia => ({
     type : commonActionTypes.SET_SOCIAL_MEDIA,
     payload : socialMedia
 });
+
+export const setContactNo = contactNo => ({
+    type : commonActionTypes.SET_CONTACT_NO,
+    payload : contactNo
+});
+
+export const setEmail = email => ({
+    type : commonActionTypes.SET_EMAIL,
+    payload : email
+});

@@ -5,6 +5,8 @@ const INITIAL_STATE = {
     copyrights: null,
     socialMedia : null,
     footerLogo : null,
+    contactNo : null,
+    email : null
 }
 
 const commonReducer = ( state = INITIAL_STATE , action ) => {
@@ -28,6 +30,16 @@ const commonReducer = ( state = INITIAL_STATE , action ) => {
             return{
                 ...state,
                 socialMedia : action.payload
+            }
+        case commonActionTypes.SET_CONTACT_NO:
+            return {
+                ...state,
+                contactNo : action.payload
+            }
+        case commonActionTypes.SET_EMAIL:
+            return {
+                ...state,
+                email : action.payload
             }
         default:
             return state;

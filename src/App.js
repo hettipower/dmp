@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Switch , Route } from 'react-router-dom';
 
-import { setSiteLogo , setFooterLogo , setCopyrights , setSocialMedia } from './redux/common/common.actions';
+import { setSiteLogo , setFooterLogo , setCopyrights , setSocialMedia , setContactNo , setEmail } from './redux/common/common.actions';
 import { 
   setMainBanner , 
   setBannerText , 
@@ -45,7 +45,9 @@ class App extends React.Component {
       setClients , 
       setTestimonials , 
       setPortfolios , 
-      setBlogPosts
+      setBlogPosts , 
+      setContactNo , 
+      setEmail
     } = this.props;
 
     //Get Common Params
@@ -55,6 +57,8 @@ class App extends React.Component {
       setFooterLogo(response.data.footerLogo);
       setCopyrights(response.data.copyrights);
       setSocialMedia(response.data.socialMedia);
+      setContactNo(response.data.contactNo);
+      setEmail(response.data.email);
     });
 
     //Get Home Page Content
@@ -114,6 +118,8 @@ const mapDispatchToProps = dispatch => ({
   setTestimonials : (testimonials) => dispatch(setTestimonials(testimonials)),
   setPortfolios : (portfolios) => dispatch(setPortfolios(portfolios)),
   setBlogPosts : (blogPosts) => dispatch(setBlogPosts(blogPosts)),
+  setContactNo : (contactNo) => dispatch(setContactNo(contactNo)),
+  setEmail : (email) => dispatch(setEmail(email)),
 });
 
 export default connect(null,mapDispatchToProps)(App);

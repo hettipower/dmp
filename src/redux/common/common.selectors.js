@@ -21,3 +21,13 @@ export const selectCopyrights = createSelector(
     [selectCommonAPI],
     (common) => common.copyrights
 );
+
+export const selectContactNo = createSelector(
+    [selectCommonAPI],
+    (common) => common.contactNo
+);
+
+export const selectEmail = createSelector(
+    [selectCommonAPI],
+    (common) => common.email
+);

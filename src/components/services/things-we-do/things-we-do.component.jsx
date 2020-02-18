@@ -4,9 +4,9 @@ import './things-we-do.styles.scss';
 
 const ThingsWeDo = ({ things }) => (
     <div className="thingsWeDoWrap">
-        <p><strong>We are different from other</strong></p>
+        <h4>We are different from other</h4>
         <h2>Things that make us better</h2>
-        <div className="thingsWrap">
+        <div className="thingsWraper">
             {
                 (things && things.length > 0) ?
                 things.map( (thing , idx) => 

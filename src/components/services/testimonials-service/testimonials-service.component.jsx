@@ -22,6 +22,8 @@ const options = {
 const TestimonialsService = ({ testimonialBg , testimonials }) => (
     <div className="testimonialsWrapper">
         <span className="imgOverlay" style={{ backgroundImage : `url(${testimonialBg})` }} />
+        <h4>We are really good at what we do</h4>
+        <h2>This is what our client say about us</h2>
         <OwlCarousel options={options} >
             {
                 (testimonials)?

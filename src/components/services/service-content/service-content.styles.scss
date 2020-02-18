@@ -1,0 +1,32 @@
+.serviceContentWrap {
+    padding: 2rem 2rem;
+
+    .serviceImage {
+        max-width: 420px;
+    }
+
+    .serviceContWrap {
+        flex: 1 1;
+        padding: 3rem 3rem;
+        line-height: 1.8;
+        font-size: 14px;
+        font-weight: 600;
+
+        h5 {
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        h4 {
+            margin-bottom: 0;
+            font-size: 15px;
+            color: #686868;
+        }
+
+        h2 {
+            font-weight: 800;
+            font-size: 2.1rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

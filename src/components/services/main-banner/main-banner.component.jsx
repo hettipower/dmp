@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './main-banner.styles.scss';
 
@@ -11,7 +12,10 @@ const MainBanner = ({ bannerImage , bannerContent }) => (
                 : ''
             }
         </div>
-        <div className="rightContWrap" dangerouslySetInnerHTML={{ __html : bannerContent  }} />
+        <div className="rightContWrap">
+            <div dangerouslySetInnerHTML={{ __html : bannerContent  }} />
+            <Link className="btn" to="/contact">GET ME A WEBSITE</Link>
+        </div>
     </div>
 );
 

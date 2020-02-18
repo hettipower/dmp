@@ -1,0 +1,27 @@
+.mainContentWrap {
+    .leftImgWrap {
+        max-width: 769px;
+    }
+    .rightContWrap {
+        flex: 1;
+        background-color: #0085d6;
+        margin-bottom: 14px;
+        padding: 7rem 3rem;
+        font-weight: 600;
+        color: #fff;
+
+        h1 {
+            font-weight: 800;
+            font-size: 4rem;
+        }
+
+        .btn {
+            background-color: #0d325b;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 0;
+            padding: 0.75rem 3rem;
+        }
+    }
+}

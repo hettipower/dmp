@@ -14,6 +14,7 @@ import {
 } from './redux/home/home.actions';
 import { setPortfolios } from './redux/portfolios/portfolios.actions';
 import { setBlogPosts } from './redux/blog/blog.actions';
+import { setServiceContents } from './redux/services/services.actions';
 
 import API from './lib/api';
 
@@ -47,7 +48,8 @@ class App extends React.Component {
       setPortfolios , 
       setBlogPosts , 
       setContactNo , 
-      setEmail
+      setEmail , 
+      setServiceContents
     } = this.props;
 
     //Get Common Params
@@ -85,6 +87,12 @@ class App extends React.Component {
       setBlogPosts(response.data);
     });
 
+    //Get Services Content
+    API.get('services')
+    .then(function(response){
+      setServiceContents(response.data);
+    });
+
   }
 
   render(){
@@ -120,6 +128,7 @@ const mapDispatchToProps = dispatch => ({
   setBlogPosts : (blogPosts) => dispatch(setBlogPosts(blogPosts)),
   setContactNo : (contactNo) => dispatch(setContactNo(contactNo)),
   setEmail : (email) => dispatch(setEmail(email)),
+  setServiceContents : (serviceContents) => dispatch(setServiceContents(serviceContents))
 });
 
 export default connect(null,mapDispatchToProps)(App);

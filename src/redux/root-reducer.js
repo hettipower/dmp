@@ -6,6 +6,7 @@ import commonReducer from './common/common.reducer';
 import homeReducer from './home/home.reducer';
 import portfolioReducer from './portfolios/portfolios.reducer';
 import blogReducer from './blog/blog.reducer';
+import serviceReducer from './services/services.reducer';
 
 const persistConfig = {
     key: 'root',
@@ -17,7 +18,8 @@ const rootReducer = combineReducers({
     common : commonReducer,
     home : homeReducer,
     portfolios : portfolioReducer,
-    blog : blogReducer
+    blog : blogReducer,
+    services : serviceReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);
